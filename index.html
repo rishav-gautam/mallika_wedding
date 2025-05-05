@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mallika & Shravan | Wedding Celebration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #f8e1e7;
+            --secondary: #4e2a35;
+            --accent: #b76d79;
+            --gold: #d9b382;
+        }
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #fffaf9;
+            color: var(--secondary);
+            scroll-behavior: smooth;
+        }
+    
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(255, 250, 249, 0.8), rgba(255, 250, 249, 0.9)),
+                url('assets/pattern.png') center/cover no-repeat;
+            padding: 2rem;
+        }
+    
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+    
+        .date {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--gold);
+            letter-spacing: 4px;
+            margin-bottom: 2rem;
+        }
+    
+        .couple-main {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid white;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            animation: float 4s ease-in-out infinite;
+        }
+    
+        .story-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 5rem 2rem;
+            gap: 3rem;
+            background: var(--primary);
+        }
+    
+        .story-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+    
+        .story-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+    
+        .story-image {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+            border: 4px solid var(--accent);
+        }
+    
+        .gallery-grid {
+            background: #fff;
+            padding: 5rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+    
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.4s ease;
+        }
+    
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+    
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.4s ease;
+            filter: grayscale(20%);
+        }
+    
+        .gallery-item:hover img {
+            filter: grayscale(0%);
+        }
+    
+        .countdown {
+            background: url('assets/floral-bg.jpg') center/cover;
+            color: white;
+        }
+    
+        .countdown-overlay {
+            background: rgba(78, 42, 53, 0.85);
+            padding: 5rem 2rem;
+        }
+    
+        .countdown-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+    
+        .countdown-item {
+            text-align: center;
+            padding: 2rem;
+            min-width: 150px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+        }
+    
+        .countdown-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    
+        .details-box {
+            background: #fff;
+            padding: 3rem;
+            margin: 4rem auto;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    
+        .details-box h2 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+        }
+    
+        .details-box p {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+    
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+    
+        @media (max-width: 768px) {
+            .story-section {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+    
+            .hero h1 {
+                font-size: 3rem;
+            }
+    
+            .date {
+                font-size: 1.5rem;
+            }
+    
+            .couple-main {
+                width: 220px;
+                height: 220px;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <section class="hero">
+        <div class="title-container">
+            <h1>Mallika & Shravan</h1>
+            <div class="date">17 • 05 • 2025</div>
+            <img src="assets/couple-main.jpg" alt="Mallika & Shravan" class="couple-main">
+        </div>
+    </section>
+
+    <section class="story-section">
+        <div>
+            <h2>Our Story</h2>
+            <p>A beautiful journey that began in Ranchi...</p>
+        </div>
+        <img src="assets/story-image.jpg" alt="Our Story" class="story-image">
+    </section>
+
+    <section class="gallery-grid">
+        <div class="gallery-item">
+            <img src="assets/gallery1.jpg" alt="Gallery Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/gallery2.jpg" alt="Gallery Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/gallery3.jpg" alt="Gallery Image 3">
+        </div>
+        <!-- <div class="gallery-item">
+            <img src="assets/gallery4.jpg" alt="Gallery Image 4">
+        </div> -->
+    </section>
+
+    <section class="countdown">
+        <div class="countdown-overlay">
+            <div class="countdown-grid">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div>Days</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div>Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div>Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div>Seconds</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="details-box">
+        <h2>Wedding Details</h2>
+        <p>Near Mahadev Manda</p>
+        <p>Pithoria Kanke Ranchi</p>
+        <p>17th May 2025 at 7:00 PM</p>
+    </div>
+
+    <script>
+        const weddingDate = new Date('May 17, 2025 15:00:00').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.querySelector('.countdown-grid').innerHTML = `
+                    <div class="celebration-message">
+                        <h2>Celebrating Our Love!</h2>
+                        <p>Thank you for being part of our journey</p>
+                    </div>
+                `;
+            }
+        }
+
+        const countdownInterval = setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Add scroll animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.gallery-item, .story-section, .details-box').forEach((el) => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
